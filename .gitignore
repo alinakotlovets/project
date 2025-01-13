@@ -1,0 +1,7 @@
+
+.idea
+/node_modules
+.htmlhintrc
+gulpfile.js
+package.json
+package-lock.json
