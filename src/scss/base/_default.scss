@@ -1,89 +1,79 @@
-//
-//.container {
-//  width: 100%;
-//  padding-left: 15px;
-//  padding-right: 15px;
-//  margin-left: auto;
-//  margin-right: auto;
-//  @include desktop {
-//    max-width: 1200px;
-//  }
-//  @include tablet {
-//    max-width: 768px;
-//  }
-//  @include mobile {
-//    max-width: 480px;
-//  }
-//}
-//
-//html {
-//  scroll-behavior: smooth;
-//}
-//
-//body {
-//  font-style: normal;
-//  line-height: normal;
-//  letter-spacing: 0;
-//}
-//
-//[class^='swiper'] {
-//  box-sizing: border-box;
-//}
-//
-//
-//
-//
-//h1, h2, h3, h4, p {
-//  margin: 0;
-//}
-//
-//ul, ol {
-//  list-style-type: none;
-//  margin: 0;
-//  padding: 0;
-//}
-//
-//address {
-//  font-style: normal;
-//}
-//
-//li {
-//  list-style-type: none;
-//}
-//
-//button {
-//  font: inherit;
-//  cursor: pointer;
-//  border: none;
-//}
-//
-//a {
-//  text-decoration: none;
-//  color: inherit;
-//}
-//
-//* {
-//  outline-color: rgba(33, 150, 243, 0.5);
-//}
-//
-//img {
-//  display: block;
-//}
-//.hide {
-//  display: none;
-//}
-//
-//.green{
-//  color: $green;
-//}
-//
-////.title {
-////  margin: 0;
-////  margin-bottom: 50px;
-////  @include mobile {
-////    margin-bottom: 30px;
-////  }
-////  @include tablet {
-////    margin-bottom: 30px;
-////  }
-////}
+
+.container {
+  width: 980px;
+ margin: 0 210px;
+  @include desktop {
+    max-width: 1000px;
+  }
+  @include tablet {
+    max-width: 768px;
+  }
+  @include mobile {
+    max-width: 480px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+[class^='swiper'] {
+  box-sizing: border-box;
+}
+
+
+
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  outline-color: rgba(33, 150, 243, 0.5);
+}
+
+img {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+
+
