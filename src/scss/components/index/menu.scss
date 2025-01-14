@@ -3,17 +3,28 @@
 }
 .menu{
   background-color: $grey;
-  padding-bottom: 34px;
-  padding-top: 26px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  @include mobile{
+    padding-bottom: 34px;
+    padding-top: 26px;
+  }
 }
 
 .menu-list{
+
+  transform: translateY(-100%); /* Меню завжди приховане за замовчуванням */
+  transition: transform 0.2s ease-in-out;
+  //
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-right: 30px;
+  margin-top: 45px;
+
   @include tablet {
     margin-right: 0;
+    margin-top: 45px;
   }
   @include mobile {
     position: fixed;
@@ -31,11 +42,13 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 
   }
 
-
 }
+
+
 .menu-list-element{
   color: $white;
   font-size: 28px;
