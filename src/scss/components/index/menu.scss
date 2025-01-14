@@ -12,6 +12,9 @@
   gap: 20px;
   justify-content: center;
   margin-right: 30px;
+  @include tablet {
+    margin-right: 0;
+  }
 
 
 }
@@ -22,7 +25,11 @@
   border-right: 2px solid $white;
   padding-right: 20px;
   letter-spacing: 0.7px;
-
+  @include tablet{
+    font-size: 18px;
+    border-right: 2px solid $white;
+    padding-right: 20px;
+  }
 }
 .menu-list-element-link{
   text-decoration: none;
@@ -41,4 +48,10 @@
 
 .menu-list-element:last-child {
   border-right: none;
+}
+
+
+.menu-buttons{
+  display: none;
+
 }
