@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body class="body">
 <header id="main" class="header">
@@ -55,9 +55,34 @@
             <img src="images/reorder_24dp_E8EAED.svg"  class="menu-open icon" alt="menu-open">
             <img src="images/close_24dp_E8EAED.svg" class="menu-close icon" alt="menu-close">
         </button>
-
     </div>
 </section>
+<section class="slider-section">
+        <div class="slider">
+            <div class="slider-slide"><img src="images/slide1.jpg"  alt="slide1"> </div>
+            <div class="slider-slide"><img src="images/slide2.jpg"  alt="slide1"></div>
+        </div>
+    <div class="slider-buttons">
+    <img class="prev" src="images/left.jpg" width="34" height="61" alt="left-button">
+    <img class="next" src="images/right.jpg" width="34" height="61" alt="right-button">
+    </div>
+</section>
+
+
+<!--<section class="slider">-->
+<!--    <button class="slider-prev"><img src="images/left.jpg"></button>-->
+<!--    <div class="slick-carousel single-item">-->
+<!--        <div><img class="slide" src="images/slide1.jpg" alt="slide1"></div>-->
+<!--        <div><img class="slide" src="images/slide2.jpg" alt="slide1"></div>-->
+<!--    </div>-->
+<!--    <button class="slider-next"><img src="images/right.jpg"></button>-->
+<!--</section>-->
+
+
+
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/menu.js" ></script>
+<script src="js/slider.js"></script>
 </html>
