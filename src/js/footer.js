@@ -16,7 +16,7 @@ function adjustFooterCenter() {
             footerCenterList.style.marginRight = '0';
         }
     }
-    if (screenWidth >= 768 && screenWidth <= 999) { // Перевіряємо, чи планшетна версія
+    if ( screenWidth >= 768 && screenWidth <= 999) { // Перевіряємо, чи планшетна версія
         if (!footerLeftText) {
             // Якщо елемент footer-left-text був видалений, коригуємо відступи для планшетної версії
             footerCenterList.style.marginLeft = '327px'; // Встановлюємо відступ на 10px
@@ -27,6 +27,7 @@ function adjustFooterCenter() {
             footerCenterList.style.marginRight = '0';
         }
     }
+
 }
 
 // Викликаємо функцію при завантаженні сторінки

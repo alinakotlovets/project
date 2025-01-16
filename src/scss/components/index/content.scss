@@ -18,7 +18,7 @@
     margin-left: 10px;
   }
   @include mobile{
-    margin-left: 10px;
+    justify-content: center;
   }
 
 }
@@ -49,7 +49,11 @@
 
 .content-accordion-list{
   @include mobile {
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
   }
 }
 
@@ -196,16 +200,17 @@
 
 
 .content-right-box{
+
   display: flex;
   flex-direction: column;
   justify-content: end;
   margin-left: auto;
-  width: 780px;
+  @include desktop{
+  width: 780px;}
   @include tablet{
     width: 520px;
   }
   @include mobile{
-    max-width: 500px;
     justify-content: center;
     margin-left: 0;
   }
