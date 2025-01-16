@@ -4,14 +4,17 @@ const menuItems = document.querySelectorAll(".menu-list-element-link");
 const hamburger= document.querySelector(".menu-buttons");
 const closeIcon= document.querySelector(".menu-close");
 const menuIcon = document.querySelector(".menu-open");
+const body = document.querySelector("body");
 
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
         menu.classList.remove("showMenu");
+        body.classList.remove("no-scroll");
         closeIcon.style.display = "none";
         menuIcon.style.display = "block";
     } else {
         menu.classList.add("showMenu");
+        body.classList.add("no-scroll");
         closeIcon.style.display = "block";
         menuIcon.style.display = "none";
     }
