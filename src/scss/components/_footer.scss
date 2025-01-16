@@ -1,0 +1,55 @@
+.footer .container{
+  display: flex;
+
+  padding-top: 45px;
+  justify-self: center;
+}
+.footer{
+  background-color: $footer-menu;
+ height: 220px;
+}
+.footer-left-text{
+
+  color: $white;
+  font-weight: 400;
+  line-height: 20.43px;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+.footer-center-list-element{
+  line-height: 25px;
+  color: $white;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  text-align: start;
+}
+.footer-center-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 155px;
+
+
+}
+.footer-right-text{
+
+  color: $white;
+}
+
+.footer-right-box{
+  gap: 9px;
+  display: flex;
+  margin-left: 290px;
+}
+
+.footer-logo-text{
+  display: flex;
+  flex-direction: column;
+}
+.footer-right-link{
+  color: $white;
+  text-decoration: underline;
+}
+.footer-right-company-logo{
+margin-top: 5px;
+}

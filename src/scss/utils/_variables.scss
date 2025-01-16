@@ -5,6 +5,7 @@ $dark-grey:#444444;
 $white: #FFFFFF;
 $light-grey:#757575;
 $back-color:#dcdcdc;
+$footer-menu: #777777;
 
 @mixin mobile {
   @media screen and (max-width: 767.9px) and (min-width: 0) {
