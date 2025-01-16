@@ -4,6 +4,7 @@
   padding-top: 45px;
   justify-self: center;
   @include mobile{
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
@@ -51,6 +52,9 @@
   letter-spacing: 0.35px;
   text-align: start;
   text-decoration: underline;
+  @include mobile{
+    text-align: center;
+  }
 }
 .footer-center-list{
   flex-shrink: 1;
@@ -58,7 +62,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+@include mobile{
+ text-align: center;
+}
 
 }
 .footer-right-text{
