@@ -7,16 +7,26 @@
 .content-boxes{
   display: flex;
   gap: 38px;
+  @include mobile{
+    flex-direction: column;
+  }
 }
 .content-top{
   display: flex;
   padding-bottom: 23px;
+  @include tablet{
+    margin-left: 10px;
+  }
+  @include mobile{
+    margin-left: 10px;
+  }
 
 }
 .content-top-text{
   margin-top: 5px;
   display: inline-block;
   color: $light-grey;
+
 
 }
 
@@ -37,13 +47,30 @@
 }
 
 
-
+.content-accordion-list{
+  @include mobile {
+    margin-left: 10px;
+  }
+}
 
 .content-box-text{
   font-size: 20px;
   color: $light-grey;
   white-space: nowrap;
   line-height: 26px;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+  @include mobile{
+    font-size: 25px;
+    line-height: 35px;
+  }
+  @include tablet{
+    margin-left: 10px;
+  }
+}
+.content-box-text:focus,
+.content-box-text:hover{
+  color: $dark-grey;
 }
 
 .content-box-text.active {
@@ -73,7 +100,19 @@
   color: $grey;
   font-size: 13px;
   white-space: nowrap;
+  cursor: pointer;
+  transition: color 300ms ease-in-out ;
+  @include mobile{
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
+
+.content-box-accordion-text:focus,
+.content-box-accordion-text:hover{
+  color: $dark-grey;
+}
+
 .content-box-accordion-text::before {
   content: '•';
   color: $grey;
@@ -89,12 +128,18 @@
   text-align: center;
   justify-content: center;
   flex-direction: column;
+  @include mobile{
+    padding-top: 50px;
+  }
 }
-.price-logo{
+.price-logo {
   margin-left: 20px;
   align-self: center;
+  @include mobile{
+    margin-left: 0;
+  }
 }
-.price-title{
+.price-title {
   margin-left: 11px;
   margin-top: 5px;
   color: $dark-grey;
@@ -102,9 +147,12 @@
   font-weight: 700;
   letter-spacing: 0.75px;
   white-space: nowrap;
-
-
+  @include mobile{
+    margin-left: 0;
+  }
 }
+
+
 .content-product-list{
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +160,9 @@
   justify-content: flex-start;
   row-gap: 19px;
   column-gap: 15px;
+  @include mobile{
+    justify-content: center;
+  }
 }
 .content-product-item{
   padding: 20px ;
@@ -135,6 +186,12 @@
   font-size: 18px;
   color: $grey;
   line-height: 16px;
+  transition: color 300ms ease-in-out;
+}
+
+.content-product-text:focus,
+.content-product-text:hover{
+  color: $dark-grey;
 }
 .content-buy-box{
   display: flex;
@@ -177,6 +234,9 @@
   color: $grey;
 
   max-width: 380px;
+  @include tablet{
+    max-width: 520px;
+  }
 }
 
 .content-company-info{
@@ -184,4 +244,14 @@
   display: flex;
 justify-content: center;
   gap: 40px ;
+  @include tablet{
+    gap: 35px;
+    flex-direction: column;
+  }
+  @include mobile{
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 25px;
+    flex-direction: column;
+  }
 }

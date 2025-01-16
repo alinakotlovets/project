@@ -2,6 +2,7 @@
   margin: 0 auto;
 }
 .menu{
+  position: relative;
   background-color: $grey;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -105,18 +106,30 @@
 }
 
 .menu-buttons{
-  background: none;
-  position: fixed;
+  position: absolute;
+  top: 16px;
+  right: 16px;
   z-index: 100;
-  top: 0;
-  right: 0;
-  padding: 4px;
   cursor: pointer;
-  margin-top: 138px;
+  background: none;
+
   @include tablet{
     display: none;}
   @include  desktop{
     display: none;
   }
 
+}
+
+
+.menu.showMenu .menu-open {
+  display: none;
+}
+
+.menu.showMenu .menu-close {
+  display: block;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
