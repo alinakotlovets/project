@@ -11,6 +11,9 @@
   }
 }
 
+
+
+
 .menu-list{
 
   transform: translateY(-100%);
@@ -97,7 +100,8 @@
   margin-top: -70px;
 }
 .showMenu {
-  transform: translateY(0);
+  @include mobile{
+  transform: translateY(0);}
 }
 
 .menu-buttons{
