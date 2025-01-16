@@ -169,6 +169,9 @@
   width: 210px;
   height: 340px;
   background-color:$back-color;
+  @include mobile{
+    justify-self: center;
+  }
 
 }
 .content-product-photo{
@@ -182,6 +185,31 @@
  letter-spacing: 1px;
 }
 
+.content-product-icon-buy{
+  cursor: pointer;
+}
+.content-left-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+
+.content-right-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: auto;
+  width: 780px;
+  @include tablet{
+    width: 520px;
+  }
+  @include mobile{
+    max-width: 500px;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
 .content-product-text{
   font-size: 18px;
   color: $grey;

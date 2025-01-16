@@ -1,12 +1,24 @@
 .footer .container{
   display: flex;
-
+  justify-content: center;
   padding-top: 45px;
   justify-self: center;
+  @include mobile{
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
 }
 .footer{
   background-color: $footer-menu;
- height: 220px;
+  height: 100%;
+
+}
+
+
+.footer-left-text,
+.footer-right-box {
+  flex-shrink: 0;
 }
 .footer-left-text{
 
@@ -15,6 +27,13 @@
   line-height: 20.43px;
   letter-spacing: 0.35px;
   text-align: left;
+  @include tablet{
+    margin-left: 10px;
+  }
+  @include mobile{
+   display: flex;
+    justify-content: center;
+  }
 }
 .footer-center-list-element{
   line-height: 25px;
@@ -22,12 +41,15 @@
   font-weight: 400;
   letter-spacing: 0.35px;
   text-align: start;
+  text-decoration: underline;
 }
 .footer-center-list{
+  flex-shrink: 1;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 155px;
+
 
 
 }
@@ -37,19 +59,39 @@
 }
 
 .footer-right-box{
+ margin-left: auto;
+  margin-right: 26px;
   gap: 9px;
+  justify-content: end;
   display: flex;
-  margin-left: 290px;
+  @include mobile{
+ margin-left: 0;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 }
 
 .footer-logo-text{
   display: flex;
   flex-direction: column;
 }
-.footer-right-link{
+.footer-right-link {
   color: $white;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.footer-right-link .underlined-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer-right-company-logo{
 margin-top: 5px;
 }
+
+
+
+
+
+
