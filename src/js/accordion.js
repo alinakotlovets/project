@@ -64,31 +64,31 @@
 //
 // //
 //
-// document.addEventListener("DOMContentLoaded", () => {
-//     // Знаходимо всі елементи з класом .content-number
-//     const numbers = document.querySelectorAll(".content-number");
-//
-//     numbers.forEach(number => {
-//         number.addEventListener("click", () => {
-//             // Якщо елемент вже активний, знімаємо клас "active"
-//             if (number.classList.contains("active")) {
-//                 number.classList.remove("active");
-//             } else {
-//                 // Якщо елемент не активний, знімаємо клас "active" у всіх інших
-//                 document.querySelectorAll(".content-number.active").forEach(activeNumber => {
-//                     activeNumber.classList.remove("active");
-//                 });
-//
-//                 // Додаємо клас "active" на натиснуту цифру
-//                 number.classList.add("active");
-//             }
-//         });
-//     });
-// });
-//
-//
-//
-//
+document.addEventListener("DOMContentLoaded", () => {
+    // Знаходимо всі елементи з класом .content-number
+    const numbers = document.querySelectorAll(".content-number");
+
+    numbers.forEach(number => {
+        number.addEventListener("click", () => {
+            // Якщо елемент вже активний, знімаємо клас "active"
+            if (number.classList.contains("active")) {
+                number.classList.remove("active");
+            } else {
+                // Якщо елемент не активний, знімаємо клас "active" у всіх інших
+                document.querySelectorAll(".content-number.active").forEach(activeNumber => {
+                    activeNumber.classList.remove("active");
+                });
+
+                // Додаємо клас "active" на натиснуту цифру
+                number.classList.add("active");
+            }
+        });
+    });
+});
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

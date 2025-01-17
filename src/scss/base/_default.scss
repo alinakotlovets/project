@@ -2,6 +2,8 @@
 .container {
   width: 980px;
   margin: 0 ;
+  padding-left: 10px;
+  padding-right: 10px;
   @include desktop {
     max-width: 1000px;
   }

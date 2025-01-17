@@ -29,7 +29,22 @@
         <div class="header-contact-info">
             <a href="tel:+74997777777" class="header-contact-info-number">+7(499) 777-77-77</a>
             <a href="tel:+74997777777" class="header-contact-info-number">+7(499) 777-77-77</a>
-            <a class="header-contact-info-modal">Зворотній зв'язок</a>
+            <a class="header-contact-info-modal" id="openModal">Зворотній зв'язок</a>
+        </div>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content">
+                <span class="modal-close" id="closeModal"><img class="icon-close" src="images/icon_close.svg" width="15" height="15" alt="icon-close"></span>
+                <div class="modal-header">Зворотній зв'язок</div>
+                <p class="modal-text">Iм'я *</p>
+                <input type="text" class="modal-input" placeholder="" >
+                <p class="modal-text">Телефон *</p>
+                <input type="tel" class="modal-input" placeholder="" >
+                <p class="modal-text">Пошта *</p>
+                <input type="email" class="modal-input" placeholder="" >
+                <p class="modal-text">Повідомлення</p>
+                <textarea class="modal-input-textarea" placeholder="" rows="5" ></textarea>
+                <button class="modal-button">Відправити</button>
+            </div>
         </div>
     </div>
 </header>
@@ -43,13 +58,13 @@
                 <a href="#content" class="menu-list-element-link"> Каталог </a>
             </li>
             <li class="menu-list-element">
-                <a href="#main" class="menu-list-element-link"> Доставка і оплата </a>
+                <a href="#delivery" class="menu-list-element-link"> Доставка і оплата </a>
             </li>
             <li class="menu-list-element">
-                <a href="#main" class="menu-list-element-link"> Прайс-лист </a>
+                <a href="#price" class="menu-list-element-link"> Прайс-лист </a>
             </li>
             <li class="menu-list-element">
-                <a href="#main" class="menu-list-element-link"> Контакти </a>
+                <a href="#contact" class="menu-list-element-link"> Контакти </a>
             </li>
         </ul>
 
@@ -136,7 +151,7 @@
                     </li>
                 </ul>
             </div>
-                <a href="#" class="price-box">
+                <a id="price" href="#" class="price-box">
                     <img class="price-logo" src="images/logo_price-list.jpg" alt="price-list-logo" width="97"
                          height="111">
                     <h1 class="price-title"> Прайс-лист</h1>
@@ -204,7 +219,7 @@
                 <li class="content-number">6</li>
                 <li class="content-number">7</li>
             </ul>
-            <span class="content-line"></span>
+            <span  id="delivery" class="content-line"></span>
             <div class="content-company-info">
                 <p class="content-company-text">
                     Компанія «Піксель Плюс» існує більше 6 років, за цей час ми брали участь у розробці понад 700
@@ -227,18 +242,18 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer id="contact" class="footer">
     <div class="container">
     <ul class="footer-left-box-text">
         <li class="footer-left-text">© 2012–2013 ЗАО «Компанія»</li>
-        <li class="footer-left-text">info@name.ua</li>
+        <li class="footer-left-text"><a href="mailto:info@name.ua">info@name.ua </a> </li>
     </ul>
     <ul class="footer-center-list">
-        <li class="footer-center-list-element">Головна</li>
-        <li class="footer-center-list-element">Каталог</li>
-        <li class="footer-center-list-element">Доставка і оплата</li>
-        <li class="footer-center-list-element">Прайс-лист</li>
-        <li class="footer-center-list-element">Контакти</li>
+        <li class="footer-center-list-element"><a href="#main">Головна</a></li>
+        <li class="footer-center-list-element"><a href="#content">Каталог</a></li>
+        <li class="footer-center-list-element"><a href="#delivery">Доставка і оплата<</a></li>
+        <li class="footer-center-list-element"><a href="#price">Прайс-лист</a></li>
+        <li class="footer-center-list-element"><a href="#contact">Контакти</a></li>
     </ul>
     <div class="footer-right-box">
         <img class="footer-right-company-logo" src="images/logo_companydev.svg" width="36" height="38" alt="footer-company-logo">
@@ -252,9 +267,12 @@
     </div>
 </footer>
 
+
+
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/slider.js"></script>

@@ -77,11 +77,12 @@
   justify-content: end;
   text-align: right;
   @include tablet{
-    margin: 35px 40px 0 0;
+
+    margin-left: auto;
 
   }
   @include mobile{
-    margin: 30px 10px 0 0;
+    margin-left: auto;
   }
 }
 
@@ -119,6 +120,7 @@
   display: inline-block;
   text-decoration: underline;
   text-decoration-style: dashed;
+  cursor: pointer;
   @include tablet{
     font-size: 17px;
   }

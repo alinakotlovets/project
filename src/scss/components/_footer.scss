@@ -11,8 +11,11 @@
   }
 }
 .footer{
+  display: flex;
+  justify-content: center;
   background-color: $footer-menu;
   padding-bottom: 47px;
+  align-items: flex-start;
 }
 
 
@@ -64,6 +67,7 @@
   flex-direction: column;
 @include mobile{
  text-align: center;
+  margin: 0;
 }
 
 }

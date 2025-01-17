@@ -1,0 +1,189 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  align-items: center;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-47%, -51.5%);
+  width: 412px;
+  height: 524px;
+  padding: 27px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  @include mobile{
+    width: 280px;
+    height: 400px;
+    padding: 10px;
+    left: 47%;
+    top: 50%;
+  }
+
+}
+
+.modal-content.active {
+  opacity: 1;
+}
+
+
+
+.modal-header {
+  margin-top: 6px;
+  display: block;
+  color: $grey;
+  font-family: $fount-pt-sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom:  27px;
+  white-space: nowrap;
+  text-align: center;
+@include mobile{
+  font-size: 18px;
+  margin-bottom:  13px;
+}
+}
+
+
+.modal-input {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 16px;
+  border: 1px solid #C3C3C3;
+  border-radius: 2px;
+  width: 300px;
+  @include mobile{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 240px;
+    margin-bottom: 7px;
+
+  }
+}
+.modal-input:last-child{
+  margin-bottom: 100px;
+
+}
+.modal-input-textarea{
+
+  margin-top: 5px;
+  margin-bottom: 23px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 16px;
+  border: 1px solid #C3C3C3;
+  border-radius: 2px;
+  width: 300px;
+  @include mobile{
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 240px;
+  }
+}
+
+.modal-button {
+ display: block;
+  text-align: center;
+  align-items: center;
+  width: 128px;
+  height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  border: none;
+  background-color: $footer-menu;
+  color: white;
+  cursor: pointer;
+  border-radius: 1px;
+  @include mobile{
+    width: 120px;
+    height: 42px;
+    font-size: 13px;
+
+  }
+}
+
+.modal-button:hover {
+  background-color: #333;
+}
+
+.modal-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: $footer-menu;
+  left: 468px;
+  bottom: 568px;
+  @include mobile{
+    left: 274.8px;
+    bottom: 384px;
+  }
+}
+
+
+.modal-text{
+  text-align: center;
+  color: $modal-grey;
+  font-family: $fount-pt-sans;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+.input-error {
+  border-color: rgb(255, 131, 131);
+  box-shadow: inset 0 0 10px 5px rgb(255, 131, 131);
+}
+
+.placeholder-error::placeholder {
+  color: rgb(220, 126, 126);
+  font-style: italic;
+  line-height: 18px;
+}
+
+
+/* Стилі для placeholder тексту помилки */
+input.input-error::placeholder {
+  color: rgb(220, 126, 126); /* Колір для тексту помилки */
+  font-style: italic;
+  line-height: 18px;
+}
